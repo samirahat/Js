@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <style>
+        #countries-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+        .country {
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(131, 129, 129);
+        }
+        
+        #display-country-details {
+            width: 40%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 0px 0px 15px #999;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img class="flags" src="${country.flags.png}" alt=""> -->
+    <header>
+        <h1>All countries</h1>
+    </header>
+    <main>
+        <section>
+            <div id="display-country-details">
+
+            </div>
+        </section>
+        <section>
+            <div id="countries-container">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="country.js"></script>
+</body>
+
+</html>
